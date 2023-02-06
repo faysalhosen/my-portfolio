@@ -18,12 +18,12 @@
 
 body{
 font-family: 'Roboto', sans-serif;
-background-color: #E5E5E5;
+background-color: #fff;
 color:var(--text-primary-color)
 }
 
 .container{
-    max-width: 1182px;
+    max-width: 1100px;
     margin:0 auto;
 
 }
@@ -79,8 +79,8 @@ color:var(--text-primary-color)
     height: 613px;
     width: 465px;
     position:absolute;
-    top:-40%;
-    right: 5%;
+    top:-60%;
+    right: 10%;
     
 }
 
@@ -109,4 +109,46 @@ color:var(--text-primary-color)
 }
 .hero-2 div{
     width:50%;
+}
+#portfolio-section{
+    margin-top: 300px;
+    background-color: #E5E5E5;
+    
+}
+.portfolio h1{ 
+    font-size: 48px;
+    margin-bottom: 85px;
+    
+    
+
+    
+}
+.portfolio h1 span{
+    color: #F46060;
+}
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0px;
+    align-items: center;
+}
+.portfolio-image img{
+    width: 100%;
+}
+.portfolio-grid{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 33.33%;
+    gap: 30px;
+}
+.portfolio-item{
+    width: calc(33.33% - 30px);
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0px 6.5812px 19.7436px rgba(0, 0, 0, 0.07);
+border-radius: 19.7436px;
+    
+}
+.portfolio-info{
+    padding: 15px;
 }
