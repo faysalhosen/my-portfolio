@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap');
 
 :root {
     --main-bg-color: brown;
@@ -7,7 +8,7 @@
     --font-secondary: 'Bebas Neue'
   }
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -18,7 +19,7 @@
 body{
 font-family: 'Roboto', sans-serif;
 background-color: #E5E5E5;
-color:var()
+color:var(--text-primary-color)
 }
 
 .container{
@@ -41,10 +42,16 @@ color:var()
 .header{
 
     margin-top:120px;
+    display: flex;
+    flex-wrap: wrap;
+    flex:0 0 1;
+    position: relative;
 }
 .header h1{
-    font-size:80px;
+    font-size: 80px;
     color: var(--text-primary-color);
+   text-transform: uppercase; 
+   font-family: var(--font-secondary);
     
 } 
 
@@ -66,4 +73,40 @@ color:var()
 
 .button:active{
     transform:scale(.97);
+}
+
+.banner-image-1 img{
+    height: 613px;
+    width: 465px;
+    position:absolute;
+    top:-40%;
+    right: 5%;
+    
+}
+
+.hero-2{
+    display: flex;
+    flex: 0 0 1;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    padding-top: 120px;
+    width: 100%;
+    position:relative;
+}
+.banner-img2 img {
+    height: 613px;
+    width: 465px;
+    position: absolute;
+    top: -20px;
+    left:0;
+}
+.hero-info{
+    padding-left: 150px;
+    padding-right: 50px;
+}
+.hero-2 h2{
+    font-size: 30px;
+}
+.hero-2 div{
+    width:50%;
 }
